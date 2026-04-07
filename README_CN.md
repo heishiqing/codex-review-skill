@@ -6,7 +6,7 @@
 
 ## 它做什么
 
-不用再记 `codex review -c 'model="gpt-5.4"' -c 'model_reasoning_effort="high"' --uncommitted` 这种长命令。只需输入 `/codex-review`，然后从菜单选：
+不用再记 `codex review -c 'model="gpt-5.4"' -c 'model_reasoning_effort="high"' --uncommitted` 这种长命令。只需输入 `/codexskill`，然后从菜单选：
 
 ```
 第 1 步: 选模型     → GPT-5.4 / GPT-5.3 Codex
@@ -21,7 +21,7 @@
 
 - **不需要记命令** — 交互菜单引导你完成每一步
 - **随时取消** — 每一步都有取消按钮
-- **快捷模式** — 老手可以跳过菜单：`/codex-review 54h uc`
+- **快捷模式** — 老手可以跳过菜单：`/codexskill 54h uc`
 - **后台执行** — 审查异步运行，不阻塞工作流
 - **支持所有模型** — GPT-5.4、5.3-codex、5.2-codex、5.1-codex-max
 - **三种思考深度** — Medium（快速）、High（平衡）、Xhigh（最仔细）
@@ -39,33 +39,33 @@
 ### 中文版（推荐）
 
 ```bash
-mkdir -p ~/.claude/skills/codex-review
-curl -o ~/.claude/skills/codex-review/SKILL.md \
-  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/zh/SKILL.md
+mkdir -p ~/.claude/skills/codexskill
+curl -o ~/.claude/skills/codexskill/SKILL.md \
+  https://raw.githubusercontent.com/heishiqing/codexskill-skill/main/zh/SKILL.md
 ```
 
 ### English version
 
 ```bash
-mkdir -p ~/.claude/skills/codex-review
-curl -o ~/.claude/skills/codex-review/SKILL.md \
-  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/en/SKILL.md
+mkdir -p ~/.claude/skills/codexskill
+curl -o ~/.claude/skills/codexskill/SKILL.md \
+  https://raw.githubusercontent.com/heishiqing/codexskill-skill/main/en/SKILL.md
 ```
 
 ## 使用方法
 
 ### 交互模式
 
-在 Claude Code 中输入 `/codex-review`，按 4 步向导操作。
+在 Claude Code 中输入 `/codexskill`，按 4 步向导操作。
 
 ### 快捷模式
 
 跳过向导，直接传入模型代号 + 范围：
 
 ```
-/codex-review 54h uc       # GPT-5.4 High + 未提交改动
-/codex-review 53x head     # GPT-5.3 Codex Xhigh + 最近一次提交
-/codex-review uc            # 默认 (GPT-5.4 High) + 未提交改动
+/codexskill 54h uc       # GPT-5.4 High + 未提交改动
+/codexskill 53x head     # GPT-5.3 Codex Xhigh + 最近一次提交
+/codexskill uc            # 默认 (GPT-5.4 High) + 未提交改动
 ```
 
 ### 模型代号速查

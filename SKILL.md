@@ -3,7 +3,7 @@ name: codex-review
 description: |
   OpenAI Codex CLI code review skill for Claude Code.
   Interactive model/depth/scope selection with shortcut mode.
-  Triggers: /codex-review, codex review, code review
+  Triggers: /codexskill, codex review, code review
 ---
 
 # Codex Review for Claude Code
@@ -97,7 +97,7 @@ codex review -c 'model="{model}"' -c 'model_reasoning_effort="{effort}"' {scope_
 
 Skip all prompts by passing arguments directly:
 
-Format: `/codex-review {code} {scope}`
+Format: `/codexskill {code} {scope}`
 
 Scope shortcuts:
 - `uc` = --uncommitted
@@ -105,10 +105,10 @@ Scope shortcuts:
 - (empty) = entire branch
 
 Examples:
-- `/codex-review 54x uc` → gpt-5.4 xhigh + uncommitted
-- `/codex-review 53h` → gpt-5.3-codex high + entire branch
-- `/codex-review 51x head` → gpt-5.1-codex-max xhigh + last commit
+- `/codexskill 54x uc` → gpt-5.4 xhigh + uncommitted
+- `/codexskill 53h` → gpt-5.3-codex high + entire branch
+- `/codexskill 51x head` → gpt-5.1-codex-max xhigh + last commit
 
 Default (scope only, no code): uses 54h
-- `/codex-review uc` → gpt-5.4 high + uncommitted
-- `/codex-review head` → gpt-5.4 high + last commit
+- `/codexskill uc` → gpt-5.4 high + uncommitted
+- `/codexskill head` → gpt-5.4 high + last commit

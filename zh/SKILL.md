@@ -3,7 +3,7 @@ name: codex-review
 description: |
   OpenAI Codex CLI 代码审查 Skill。
   交互式选择模型/思考深度/审查范围，无需记命令。
-  触发词：/codex-review, codex review, 代码审查, 审查代码, review code
+  触发词：/codexskill, codex review, 代码审查, 审查代码, review code
 ---
 
 # Codex Review for Claude Code
@@ -97,7 +97,7 @@ codex review -c 'model="{model}"' -c 'model_reasoning_effort="{effort}"' {scope_
 
 跳过所有提问，直接传参：
 
-格式：`/codex-review {代号} {范围}`
+格式：`/codexskill {代号} {范围}`
 
 范围缩写：
 - `uc` = --uncommitted（未提交改动）
@@ -105,9 +105,9 @@ codex review -c 'model="{model}"' -c 'model_reasoning_effort="{effort}"' {scope_
 - 不写 = 整个分支
 
 示例：
-- `/codex-review 54x uc` → gpt-5.4 xhigh + 未提交改动
-- `/codex-review 53h` → gpt-5.3-codex high + 整个分支
-- `/codex-review 51x head` → gpt-5.1-codex-max xhigh + 最近一次提交
+- `/codexskill 54x uc` → gpt-5.4 xhigh + 未提交改动
+- `/codexskill 53h` → gpt-5.3-codex high + 整个分支
+- `/codexskill 51x head` → gpt-5.1-codex-max xhigh + 最近一次提交
 
 只写范围不写代号时，默认 54h：
-- `/codex-review uc` → gpt-5.4 high + 未提交改动
+- `/codexskill uc` → gpt-5.4 high + 未提交改动

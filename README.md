@@ -6,7 +6,7 @@
 
 ## What It Does
 
-Instead of memorizing `codex review -c 'model="gpt-5.4"' -c 'model_reasoning_effort="high"' --uncommitted`, you just type `/codex-review` and pick from menus:
+Instead of memorizing `codex review -c 'model="gpt-5.4"' -c 'model_reasoning_effort="high"' --uncommitted`, you just type `/codexskill` and pick from menus:
 
 ```
 Step 1: Pick model     → GPT-5.4 / GPT-5.3 Codex
@@ -21,7 +21,7 @@ Review runs in background. You get notified when it's done.
 
 - **No commands to remember** — interactive menus guide you through every option
 - **Cancel anytime** — every step has a cancel button
-- **Shortcut mode** — power users can skip menus: `/codex-review 54h uc`
+- **Shortcut mode** — power users can skip menus: `/codexskill 54h uc`
 - **Background execution** — review runs async, doesn't block your workflow
 - **All models supported** — GPT-5.4, 5.3-codex, 5.2-codex, 5.1-codex-max
 - **Three reasoning depths** — Medium (fast), High (balanced), Xhigh (thorough)
@@ -39,33 +39,33 @@ Review runs in background. You get notified when it's done.
 ### English version (default)
 
 ```bash
-mkdir -p ~/.claude/skills/codex-review
-curl -o ~/.claude/skills/codex-review/SKILL.md \
-  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/en/SKILL.md
+mkdir -p ~/.claude/skills/codexskill
+curl -o ~/.claude/skills/codexskill/SKILL.md \
+  https://raw.githubusercontent.com/heishiqing/codexskill-skill/main/en/SKILL.md
 ```
 
 ### Chinese version (中文版)
 
 ```bash
-mkdir -p ~/.claude/skills/codex-review
-curl -o ~/.claude/skills/codex-review/SKILL.md \
-  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/zh/SKILL.md
+mkdir -p ~/.claude/skills/codexskill
+curl -o ~/.claude/skills/codexskill/SKILL.md \
+  https://raw.githubusercontent.com/heishiqing/codexskill-skill/main/zh/SKILL.md
 ```
 
 ## Usage
 
 ### Interactive Mode
 
-Type `/codex-review` in Claude Code. Follow the 4-step wizard.
+Type `/codexskill` in Claude Code. Follow the 4-step wizard.
 
 ### Shortcut Mode
 
 Skip the wizard by passing model code + scope directly:
 
 ```
-/codex-review 54h uc       # GPT-5.4 High + uncommitted changes
-/codex-review 53x head     # GPT-5.3 Codex Xhigh + last commit
-/codex-review uc            # Default (GPT-5.4 High) + uncommitted
+/codexskill 54h uc       # GPT-5.4 High + uncommitted changes
+/codexskill 53x head     # GPT-5.3 Codex Xhigh + last commit
+/codexskill uc            # Default (GPT-5.4 High) + uncommitted
 ```
 
 ### Model Codes Quick Reference
