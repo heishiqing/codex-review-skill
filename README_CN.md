@@ -8,12 +8,12 @@
 
 不用再记 `codex review -c 'model="gpt-5.4"' -c 'model_reasoning_effort="high"' --uncommitted` 这种长命令。只需输入 `/codexskill`，然后从菜单选：
 
-```
-第 1 步: 选模型     → GPT-5.4 / GPT-5.3 Codex
-第 2 步: 选深度     → Medium / High / Xhigh
-第 3 步: 选范围     → 最近一次提交 / 未提交改动 / 整个分支
-第 4 步: 确认       → 开始 / 取消
-```
+**第 1 步** — 选模型 | **第 2 步** — 选深度 | **第 3 步** — 选范围 | **第 4 步** — 确认
+
+![第 1 步: 模型](./screenshots/zh/step1-model.png)
+![第 2 步: 深度](./screenshots/zh/step2-depth.png)
+![第 3 步: 范围](./screenshots/zh/step3-scope.png)
+![第 4 步: 确认](./screenshots/zh/step4-confirm.png)
 
 审查在后台运行，完成后自动通知。
 
@@ -41,7 +41,7 @@
 ```bash
 mkdir -p ~/.claude/skills/codexskill
 curl -o ~/.claude/skills/codexskill/SKILL.md \
-  https://raw.githubusercontent.com/heishiqing/codexskill-skill/main/zh/SKILL.md
+  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/zh/SKILL.md
 ```
 
 ### English version
@@ -49,7 +49,7 @@ curl -o ~/.claude/skills/codexskill/SKILL.md \
 ```bash
 mkdir -p ~/.claude/skills/codexskill
 curl -o ~/.claude/skills/codexskill/SKILL.md \
-  https://raw.githubusercontent.com/heishiqing/codexskill-skill/main/en/SKILL.md
+  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/en/SKILL.md
 ```
 
 ## 使用方法

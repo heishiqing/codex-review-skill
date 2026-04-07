@@ -8,12 +8,12 @@
 
 Instead of memorizing `codex review -c 'model="gpt-5.4"' -c 'model_reasoning_effort="high"' --uncommitted`, you just type `/codexskill` and pick from menus:
 
-```
-Step 1: Pick model     → GPT-5.4 / GPT-5.3 Codex
-Step 2: Pick depth     → Medium / High / Xhigh
-Step 3: Pick scope     → Last commit / Uncommitted / Entire branch
-Step 4: Confirm        → Go / Cancel
-```
+**Step 1** — Pick model | **Step 2** — Pick depth | **Step 3** — Pick scope | **Step 4** — Confirm
+
+![Step 1: Model](./screenshots/en/step1-model.png)
+![Step 2: Depth](./screenshots/en/step2-depth.png)
+![Step 3: Scope](./screenshots/en/step3-scope.png)
+![Step 4: Confirm](./screenshots/en/step4-confirm.png)
 
 Review runs in background. You get notified when it's done.
 
@@ -41,7 +41,7 @@ Review runs in background. You get notified when it's done.
 ```bash
 mkdir -p ~/.claude/skills/codexskill
 curl -o ~/.claude/skills/codexskill/SKILL.md \
-  https://raw.githubusercontent.com/heishiqing/codexskill-skill/main/en/SKILL.md
+  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/en/SKILL.md
 ```
 
 ### Chinese version (中文版)
@@ -49,7 +49,7 @@ curl -o ~/.claude/skills/codexskill/SKILL.md \
 ```bash
 mkdir -p ~/.claude/skills/codexskill
 curl -o ~/.claude/skills/codexskill/SKILL.md \
-  https://raw.githubusercontent.com/heishiqing/codexskill-skill/main/zh/SKILL.md
+  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/zh/SKILL.md
 ```
 
 ## Usage
