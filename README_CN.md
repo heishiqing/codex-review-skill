@@ -29,10 +29,31 @@
 ## 前置条件
 
 1. [Claude Code](https://claude.ai/code) 已安装
-2. [OpenAI Codex CLI](https://github.com/openai/codex) 已安装：
+2. OpenAI API Key 或 OAuth 授权（需要有效的 OpenAI 账号）
+3. [OpenAI Codex CLI](https://github.com/openai/codex) 已安装并授权：
    ```bash
    npm install -g @openai/codex
    ```
+
+### 授权配置
+
+三选一：
+
+```bash
+# 方法 1: 浏览器登录（推荐，走 OAuth）
+codex login
+
+# 方法 2: API Key 环境变量
+export OPENAI_API_KEY="sk-..."
+
+# 方法 3: API Key 管道输入
+echo "sk-..." | codex login --with-api-key
+```
+
+验证授权状态：
+```bash
+codex login status
+```
 
 ## 安装
 

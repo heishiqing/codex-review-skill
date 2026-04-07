@@ -29,10 +29,31 @@ Review runs in background. You get notified when it's done.
 ## Prerequisites
 
 1. [Claude Code](https://claude.ai/code)
-2. [OpenAI Codex CLI](https://github.com/openai/codex) installed:
+2. OpenAI API Key or OAuth authorization (requires an active OpenAI account)
+3. [OpenAI Codex CLI](https://github.com/openai/codex) installed and authenticated:
    ```bash
    npm install -g @openai/codex
    ```
+
+### Authentication
+
+Choose one method:
+
+```bash
+# Method 1: Browser login (recommended)
+codex login
+
+# Method 2: API key via environment variable
+export OPENAI_API_KEY="sk-..."
+
+# Method 3: API key via stdin
+echo "sk-..." | codex login --with-api-key
+```
+
+Verify auth status:
+```bash
+codex login status
+```
 
 ## Installation
 
