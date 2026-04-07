@@ -36,17 +36,20 @@ Review runs in background. You get notified when it's done.
 
 ## Installation
 
-```bash
-# Clone into Claude Code skills directory
-git clone https://github.com/heishiqing/codex-review-skill.git ~/.claude/skills/codex-review
-```
-
-Or manually copy `SKILL.md`:
+### English version (default)
 
 ```bash
 mkdir -p ~/.claude/skills/codex-review
 curl -o ~/.claude/skills/codex-review/SKILL.md \
-  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/SKILL.md
+  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/en/SKILL.md
+```
+
+### Chinese version (中文版)
+
+```bash
+mkdir -p ~/.claude/skills/codex-review
+curl -o ~/.claude/skills/codex-review/SKILL.md \
+  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/zh/SKILL.md
 ```
 
 ## Usage

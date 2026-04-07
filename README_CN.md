@@ -36,17 +36,20 @@
 
 ## 安装
 
-```bash
-# 克隆到 Claude Code skills 目录
-git clone https://github.com/heishiqing/codex-review-skill.git ~/.claude/skills/codex-review
-```
-
-或手动下载 `SKILL.md`：
+### 中文版（推荐）
 
 ```bash
 mkdir -p ~/.claude/skills/codex-review
 curl -o ~/.claude/skills/codex-review/SKILL.md \
-  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/SKILL.md
+  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/zh/SKILL.md
+```
+
+### English version
+
+```bash
+mkdir -p ~/.claude/skills/codex-review
+curl -o ~/.claude/skills/codex-review/SKILL.md \
+  https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/en/SKILL.md
 ```
 
 ## 使用方法
