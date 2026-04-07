@@ -57,7 +57,15 @@ codex login status
 
 ## Installation
 
-### English version (default)
+### Ask Claude to install it for you
+
+Paste this into Claude Code:
+
+> Install the codexskill skill: download https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/en/SKILL.md and save it to ~/.claude/skills/codexskill/SKILL.md
+
+### Manual install
+
+#### English version (default)
 
 ```bash
 mkdir -p ~/.claude/skills/codexskill

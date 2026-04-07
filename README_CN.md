@@ -57,7 +57,15 @@ codex login status
 
 ## 安装
 
-### 中文版（推荐）
+### 让 Claude 帮你安装
+
+在 Claude Code 中发送：
+
+> 帮我安装 codexskill：下载 https://raw.githubusercontent.com/heishiqing/codex-review-skill/main/zh/SKILL.md 保存到 ~/.claude/skills/codexskill/SKILL.md
+
+### 手动安装
+
+#### 中文版（推荐）
 
 ```bash
 mkdir -p ~/.claude/skills/codexskill
